@@ -51,7 +51,18 @@
 //
 //
 
+fun main(){
+    val Button = "B"
 
+    val answer = when(Button){
+        "A" -> "yes"
+        "B"->"no"
+        "X"->"menu"
+        "Y"->"nothing"
+        else->"there is no such button"
+    }
+    println(answer)
+}
 
 
 
