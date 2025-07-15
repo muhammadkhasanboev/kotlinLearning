@@ -131,15 +131,45 @@ divisible by 3 and 5 --> fizbuzz
 * you can use variable names in function parameter when calling function
 * whether sequence is not same but with parameter names everything works fine
 * */
-//fun logMessage(log: String, Message: String){
+//fun logMessage(log: String, Message: String="hello"){
 //    return println("log is $log, message: $Message")
 //}
 //fun main(){
 //    logMessage(Message="Hello world", log="nothing")
+//    logMessage(log="info")
+//}
+
+
+//using single-expression function
+//fun sum(a: Int, b: Int)=a+b
+//
+//fun main(){
+//    println(sum(2,2))
+//}
+
+
+//simple exercise:
+
+//val registeredUser : MutableList<String> = mutableListOf("Example", "Example2")
+//val registeredEmails : MutableList<String> = mutableListOf("example@gmail.com", "example2@gmail.com")
+//
+//fun register(username: String, gmail: String): String{
+//    if(username in registeredUser){
+//       return "This username already taken"
+//    }
+//    if(gmail in registeredEmails){
+//      return  "this E-mail already taken"
+//    }
+//    registeredUser.add(username)
+//    registeredEmails.add(gmail)
+//    return "User registered successfully"
 //}
 //
-
-
+//fun main(){
+//    println(register("Example", "example@gmail.com"))
+//    println(register("example3","example3@gmail.com"))
+//    println(registeredUser.count())
+//}
 
 
 
