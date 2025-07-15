@@ -51,33 +51,93 @@
 //
 //
 
-fun main(){
-    val Button = "B"
+//fun main(){
+//    val Button = "B"
+//
+//    val answer = when(Button){
+//        "A" -> "yes"
+//        "B"->"no"
+//        "X"->"menu"
+//        "Y"->"nothing"
+//        else->"there is no such button"
+//    }
+//    println(answer)
+//}
 
-    val answer = when(Button){
-        "A" -> "yes"
-        "B"->"no"
-        "X"->"menu"
-        "Y"->"nothing"
-        else->"there is no such button"
-    }
-    println(answer)
-}
+//loops
+
+//fun main(){
+//    for(i in 1..5){
+//        print(i+1)
+//    }
+//}
+
+//fun main(){
+//    val vegetables = listOf("carrot", "potato", "tomato")
+//
+//    for(i in vegetables){
+//        println("there is no $i")
+//    }
+//}
+//
+//
+//fun main(){
+//    var count = 0
+//   do{
+//       count++
+//       print(count)
+//   }while (count<10)
+//}
+
+//fizz buzz game
+/*
+divisible by 3-->fizz
+divisible by 5-->buzz
+divisible by 3 and 5 --> fizbuzz
+ */
+
+//fun main(){
+//    for(i in 1..100){
+//        when {
+//            i%15==0 -> println("fizzbuzz")
+//            i%3==0 -> println("fizz")
+//            i%5==0 -> println("buzz")
+//            else -> println("number is $i")
+//        }
+//    }
+//}
+//
+
+//fun hello(){
+//    return println("hello")
+//}
+//fun main(){
+//    hello()
+//}
 
 
+//example for functions
 
+//fun adder(a : Int, b : Int): Int{
+//    return a+b
+//}
+//
+//fun main(){
+//    println(adder(1,2))
+//}
 
-
-
-
-
-
-
-
-
-
-
-
+/*
+* example: named arguments
+* you can use variable names in function parameter when calling function
+* whether sequence is not same but with parameter names everything works fine
+* */
+//fun logMessage(log: String, Message: String){
+//    return println("log is $log, message: $Message")
+//}
+//fun main(){
+//    logMessage(Message="Hello world", log="nothing")
+//}
+//
 
 
 
