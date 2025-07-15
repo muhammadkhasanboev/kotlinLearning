@@ -197,5 +197,16 @@ divisible by 3 and 5 --> fizbuzz
 //    println("negative numbers: $negative")
 //}
 
-
+fun main(){
+    val numbers = listOf(1,2,3,4,5,6,7,8,9)
+    //changes numbers to negative
+    val changeToNegative = numbers.map{x->x*(-1)}
+    println(changeToNegative) //[-1, -2, -3, -4, -5, -6, -7, -8, -9]
+    //multiplies numbers by 2
+    val doubleAmount = numbers.map{x->x*2}
+    println(doubleAmount)//[2, 4, 6, 8, 10, 12, 14, 16, 18]
+    //filters even numbers
+    val even = numbers.filter{x->x%2==0}
+    println(even)//[2, 4, 6, 8]
+}
 
