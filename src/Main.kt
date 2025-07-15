@@ -172,6 +172,30 @@ divisible by 3 and 5 --> fizbuzz
 //}
 
 
+//EXERCISE: write function that takes radius of circle and calculates the area of that circle
+//import kotlin.math.*
+//fun areaCalculator(radius: Int): Double = PI*radius*radius
+//
+//fun main(){
+//    println(areaCalculator(radius=2))
+//}
+
+//fun main(){
+//    val touppercase = {text:String -> text.uppercase()}
+//    print(touppercase("hello"))
+//}
+
+//fun main(){
+//    //given list
+//    val numbers = listOf(-1,3,-3,5,3,2-1,0)
+//    //filter() can be great example for passing lambda to another function
+//    val positive = numbers.filter({x->x>=0})
+//    println("posivite numbers: $positive")
+//    //filter() can be great example for passing lambda to another function
+//    val isNegative = {x:Int-> x<0}
+//    val negative = numbers.filter(isNegative)
+//    println("negative numbers: $negative")
+//}
 
 
 
