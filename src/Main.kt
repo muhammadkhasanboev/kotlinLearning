@@ -417,14 +417,27 @@ divisible by 3 and 5 --> fizbuzz
  * it overrides default value, otherwise function uses default value
  * */
 
+//fun main(){
+//    defaultParameter()
+////    first number: 1
+////    second number: 2
+//    defaultParameter(3,4)
+////    first number: 3
+////    second number: 4
+//}
+//fun defaultParameter(firstNumber: Int = 1, secondNumber: Int = 2): String{
+//    return "first number: ${firstNumber} \nsecond number: ${secondNumber}"
+//}
+//-------------------------------------------------------------------------------
+
+/**
+ * Functions: functions without return keyword
+ * -if function does not return useful value then its value is Unit
+ * -print function is Unit type, in this case we don't have to use 'return'*/
 fun main(){
-    defaultParameter()
-//    first number: 1
-//    second number: 2
-    defaultParameter(3,4)
-//    first number: 3
-//    second number: 4
+    functionWithoutReturn("Muhammad")
 }
-fun defaultParameter(firstNumber: Int = 1, secondNumber: Int = 2): String{
-    return "first number: ${firstNumber} \nsecond number: ${secondNumber}"
+
+fun functionWithoutReturn(name: String){
+    println("Hello, ${name}")
 }
