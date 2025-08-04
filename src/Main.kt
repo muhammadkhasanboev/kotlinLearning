@@ -196,17 +196,33 @@ divisible by 3 and 5 --> fizbuzz
 //    val negative = numbers.filter(isNegative)
 //    println("negative numbers: $negative")
 //}
-
+//
+//fun main(){
+//    val numbers = listOf(1,2,3,4,5,6,7,8,9)
+//    //changes numbers to negative
+//    val changeToNegative = numbers.map{x->x*(-1)}
+//    println(changeToNegative) //[-1, -2, -3, -4, -5, -6, -7, -8, -9]
+//    //multiplies numbers by 2
+//    val doubleAmount = numbers.map{x->x*2}
+//    println(doubleAmount)//[2, 4, 6, 8, 10, 12, 14, 16, 18]
+//    //filters even numbers
+//    val even = numbers.filter{x->x%2==0}
+//    println(even)//[2, 4, 6, 8]
+//}
 fun main(){
-    val numbers = listOf(1,2,3,4,5,6,7,8,9)
-    //changes numbers to negative
-    val changeToNegative = numbers.map{x->x*(-1)}
-    println(changeToNegative) //[-1, -2, -3, -4, -5, -6, -7, -8, -9]
-    //multiplies numbers by 2
-    val doubleAmount = numbers.map{x->x*2}
-    println(doubleAmount)//[2, 4, 6, 8, 10, 12, 14, 16, 18]
-    //filters even numbers
-    val even = numbers.filter{x->x%2==0}
-    println(even)//[2, 4, 6, 8]
-}
+    val immutableList : List<String> = listOf("this", "is", "immutable","list")
+    println(immutableList)
 
+    val mutableList: MutableList<String> = mutableListOf("this", "is", "mutable","list")
+    println(mutableList)
+
+    println("this is first element of immutable list: ${immutableList[0]}")
+    println("these are first and last element of immutable list: ${immutableList.first()} ${immutableList.last()}")
+    println("this is length of immutable list: ${immutableList.count()}")
+    println("this" in immutableList)
+
+    mutableList.add("added word")
+    println(mutableList)
+    mutableList.removeLast()
+    //last item in the list removed
+}
