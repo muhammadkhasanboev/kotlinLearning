@@ -387,15 +387,26 @@ divisible by 3 and 5 --> fizbuzz
  * -if function doest not need to return, 'return' keyword can be omitted
  * */
 
+//fun main(){
+//    newFunc()
+//    sum(2,2) //4
+//}
+//
+//fun newFunc(){
+//    println("new function")
+//}
+//
+//fun sum(x: Int, y: Int): Int{
+//    return x+y
+//}
+//------------------------------------------------------------------------------
+//Topic: named arguments
 fun main(){
-    newFunc()
-    sum(2,2) //4
+    adder(secondNumber = 3, firstNumber = 8)
+    //first number: 8 and second number: 3
 }
 
-fun newFunc(){
-    println("new function")
+fun adder(firstNumber: Int, secondNumber: Int): String{
+    return "first number: ${firstNumber} and second number: ${secondNumber}"
 }
-
-fun sum(x: Int, y: Int): Int{
-    return x+y
-}
+//-------------------------------------------------------------------------------
