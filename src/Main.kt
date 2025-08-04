@@ -434,10 +434,32 @@ divisible by 3 and 5 --> fizbuzz
  * Functions: functions without return keyword
  * -if function does not return useful value then its value is Unit
  * -print function is Unit type, in this case we don't have to use 'return'*/
-fun main(){
-    functionWithoutReturn("Muhammad")
-}
+//fun main(){
+//    functionWithoutReturn("Muhammad")
+//}
+//
+//fun functionWithoutReturn(name: String){
+//    println("Hello, ${name}")
+//}
+//-------------------------------------------------------------------------------
 
-fun functionWithoutReturn(name: String){
-    println("Hello, ${name}")
+/**
+ * Topic: Lambda expressions
+ * -with lambda our code will be clean
+ * -lambda function parameter come befor ->
+ * -lambda function body comes after ->
+ * */
+
+//fun main(){
+//    uppercaseString("hello")//HELLO
+//}
+//
+//fun uppercaseString(word: String): String{
+//    return word.uppercase()
+//}
+
+//same code but with lambda function
+fun main(){
+    val uppercaseString = {word: String-> word.uppercase()}
+    println(uppercaseString("hello"))//HELLO
 }
