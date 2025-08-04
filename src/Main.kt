@@ -355,25 +355,47 @@ divisible by 3 and 5 --> fizbuzz
 //}
 
 //topic: Ranges
+//fun main(){
+//    for(i in 1..4){
+//        print(" "+i) //1 2 3 4
+//    }
+//
+//    for(i in 1..<4){
+//        print(i) // 1 2 3
+//    }
+//
+//    for(i in 4 downTo 1){
+//        print(i)// 4 3 2 1
+//    }
+//
+//    for(i in 1..10 step 2){
+//        print(i)// 1 3 5 7 9
+//    }
+//
+//    for(i in 'a'..'d'){
+//        print(i)// a b c d
+//    }
+//}
+
+/**
+ * Topic: Functions
+ * -we can declare functions with 'fun' keyword
+ * -we can have parameters of function inside ()
+ * -each parameter should have data type
+ * -we can give function return data type fun ():-> here
+ * -function body will be inside {}
+ * -if function doest not need to return, 'return' keyword can be omitted
+ * */
+
 fun main(){
-    for(i in 1..4){
-        print(" "+i) //1 2 3 4
-    }
-
-    for(i in 1..<4){
-        print(i) // 1 2 3
-    }
-
-    for(i in 4 downTo 1){
-        print(i)// 4 3 2 1
-    }
-
-    for(i in 1..10 step 2){
-        print(i)// 1 3 5 7 9
-    }
-
-    for(i in 'a'..'d'){
-        print(i)// a b c d
-    }
+    newFunc()
+    sum(2,2) //4
 }
 
+fun newFunc(){
+    println("new function")
+}
+
+fun sum(x: Int, y: Int): Int{
+    return x+y
+}
