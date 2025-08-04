@@ -242,6 +242,8 @@ divisible by 3 and 5 --> fizbuzz
 //    //last item in the list removed
 //}
 //
+
+
 /**
  * Topic: Collections -> Set
  * Set stores item: unordered, stores only unique items
@@ -254,14 +256,42 @@ divisible by 3 and 5 --> fizbuzz
  * we cannot access elements: a[0] X
  */
 
+//
+//fun main(){
+//    val immutableSet: Set<String> = setOf("this", "is", "set")
+//    val mutableSet: MutableSet<String> = mutableSetOf("this", "is", "mutable", "set")
+//    println(immutableSet.count())
+//    println("this" in immutableSet)
+//    mutableSet.add("last element")
+//    mutableSet.remove("this")
+//    println("${immutableSet.first()}")
+//    println("${immutableSet.last()}")
+//}
+
+/**
+ * Topic: Collections -> Map
+ * Map stores items: stores items in key-value pairs, by using key we can access elements
+ * key should be unique.
+ * Types of Map:
+ *          immutable map: val a: Map<Key, Value> = mapOf(key to value)
+ *          mutabel map: val a: MutableMap<key, value> = mutableMapOf(key to value)
+ * accessing map items: a["key"]
+ * !!! If you try to access a key-value pair with a key that doesn't exist in a map, you see a null value
+ * adding elements: a["key"] = value
+ * removing elements: a.remove("key")
+ * number of items in the map: a.count()
+ * To check if a specific key is already included in a map: a.containsKey("key")
+ * To obtain a collection of the keys or values of a map : a.keys & a.values
+ *
+ * */
+
 fun main(){
-    val immutableSet: Set<String> = setOf("this", "is", "set")
-    val mutableSet: MutableSet<String> = mutableSetOf("this", "is", "mutable", "set")
-    println(immutableSet.count())
-    println("this" in immutableSet)
-    mutableSet.add("last element")
-    mutableSet.remove("this")
-    println("${immutableSet.first()}")
-    println("${immutableSet.last()}")
+    val immutableMap: Map<String, Int> = mapOf("one" to 1, "two" to 2) //{one=1, two=2}
+    val mutableMap: MutableMap<String, Int> = mutableMapOf("one" to 1, "two" to 2)
+
+    println(immutableMap["one"])
+    mutableMap["three"] = 3//{one=1, two=2, three=3}
+    mutableMap.remove("three")//{one=1, two=2}
+    println(immutableMap.containsKey("one"))//true
 }
 
