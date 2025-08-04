@@ -459,7 +459,34 @@ divisible by 3 and 5 --> fizbuzz
 //}
 
 //same code but with lambda function
+//fun main(){
+//    val uppercaseString = {word: String-> word.uppercase()}
+//    println(uppercaseString("hello"))//HELLO
+//}
+
+//-------------------------------------------------------------------------------
+/**
+ * Topic: pass lambda expression to another function
+ * A great example of when it is useful to pass a lambda expression to a function, is using the .filter() function on collections:
+ * The .filter() function accepts a lambda expression as a predicate:
+ * { x -> x > 0 } takes each element of the list and returns only those that are positive.
+ * { x -> x < 0 } takes each element of the list and returns only those that are negative.
+ * This example demonstrates two ways of passing a lambda expression to a function:
+ * For positive numbers, the example adds the lambda expression directly in the .filter() function.
+ * For negative numbers, the example assigns the lambda expression to the isNegative variable. Then the isNegative variable is used as a function parameter in the
+ * .filter() function. In this case, you have to specify the type of function parameters (x) in the lambda expression.
+ *
+ * Another good example, is using the .map() function to transform items in a collection
+ * f.e: numbers.map({x:Int -> x*2})
+ * */
+
 fun main(){
-    val uppercaseString = {word: String-> word.uppercase()}
-    println(uppercaseString("hello"))//HELLO
+    val numbers: List<Int> = listOf(-1,2,-3,4,-5,6,-7,8,-9)
+
+    val positiveNumbers = numbers.filter({x: Int-> x>0})//[2, 4, 6, 8]
+    val negativeNumbers = numbers.filter({x: Int-> x<0})//[-1, -3, -5, -7, -9]
+
+    println(positiveNumbers)
+    println(negativeNumbers)
+
 }
