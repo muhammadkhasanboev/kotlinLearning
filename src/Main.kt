@@ -401,12 +401,30 @@ divisible by 3 and 5 --> fizbuzz
 //}
 //------------------------------------------------------------------------------
 //Topic: named arguments
-fun main(){
-    adder(secondNumber = 3, firstNumber = 8)
-    //first number: 8 and second number: 3
-}
-
-fun adder(firstNumber: Int, secondNumber: Int): String{
-    return "first number: ${firstNumber} and second number: ${secondNumber}"
-}
+//fun main(){
+//    adder(secondNumber = 3, firstNumber = 8)
+//    //first number: 8 and second number: 3
+//}
+//
+//fun adder(firstNumber: Int, secondNumber: Int): String{
+//    return "first number: ${firstNumber} and second number: ${secondNumber}"
+//}
 //-------------------------------------------------------------------------------
+
+/**
+ * Functions: Default parameter
+ * -when we give default parameters to the parameters if caller gives another value
+ * it overrides default value, otherwise function uses default value
+ * */
+
+fun main(){
+    defaultParameter()
+//    first number: 1
+//    second number: 2
+    defaultParameter(3,4)
+//    first number: 3
+//    second number: 4
+}
+fun defaultParameter(firstNumber: Int = 1, secondNumber: Int = 2): String{
+    return "first number: ${firstNumber} \nsecond number: ${secondNumber}"
+}
