@@ -331,25 +331,49 @@ divisible by 3 and 5 --> fizbuzz
  * Use -> in each branch to separate each check from the action to take if the check is successful.
  * when can be used either as a statement or as an expression. A statement doesn't return anything but performs actions instead.*/
 
+//fun main(){
+//    var a = 10
+//    a += 10
+//
+//    when(a){
+//        10 -> println(10)
+//        20 -> println(20)
+//        else -> println("nothing")
+//    }
+//    second()
+//}
+//fun second(){
+//    var a = 10
+//    a += 10
+//
+//    val answer = when{
+//        a == 10 -> 10
+//        a == 20 -> 20
+//        else -> 0
+//    }
+//    println(answer)
+//}
+
+//topic: Ranges
 fun main(){
-    var a = 10
-    a += 10
-
-    when(a){
-        10 -> println(10)
-        20 -> println(20)
-        else -> println("nothing")
+    for(i in 1..4){
+        print(" "+i) //1 2 3 4
     }
-    second()
-}
-fun second(){
-    var a = 10
-    a += 10
 
-    val answer = when{
-        a == 10 -> 10
-        a == 20 -> 20
-        else -> 0
+    for(i in 1..<4){
+        print(i) // 1 2 3
     }
-    println(answer)
+
+    for(i in 4 downTo 1){
+        print(i)// 4 3 2 1
+    }
+
+    for(i in 1..10 step 2){
+        print(i)// 1 3 5 7 9
+    }
+
+    for(i in 'a'..'d'){
+        print(i)// a b c d
+    }
 }
+
