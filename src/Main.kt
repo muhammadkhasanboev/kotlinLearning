@@ -480,13 +480,28 @@ divisible by 3 and 5 --> fizbuzz
  * f.e: numbers.map({x:Int -> x*2})
  * */
 
+//fun main(){
+//    val numbers: List<Int> = listOf(-1,2,-3,4,-5,6,-7,8,-9)
+//
+//    val positiveNumbers = numbers.filter({x: Int-> x>0})//[2, 4, 6, 8]
+//    val negativeNumbers = numbers.filter({x: Int-> x<0})//[-1, -3, -5, -7, -9]
+//
+//    println(positiveNumbers)
+//    println(negativeNumbers)
+//
+//}
+//-------------------------------------------------------------------------------
+
+// lambda expression can be returned from function
+fun second(name: String): (Int) -> Int = when(name){
+    "hour" -> { value -> value *60*60 }
+    "minute" -> { value-> value*60 }
+    "second" -> { value-> value }
+    else -> {value -> value}
+}
 fun main(){
-    val numbers: List<Int> = listOf(-1,2,-3,4,-5,6,-7,8,-9)
-
-    val positiveNumbers = numbers.filter({x: Int-> x>0})//[2, 4, 6, 8]
-    val negativeNumbers = numbers.filter({x: Int-> x<0})//[-1, -3, -5, -7, -9]
-
-    println(positiveNumbers)
-    println(negativeNumbers)
-
+    val l = listOf(1,2,3)
+    val minuteToSecond = second("minute")
+    val answer = l.map(minuteToSecond).sum()
+    println(answer)
 }
