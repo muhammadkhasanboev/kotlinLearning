@@ -300,25 +300,56 @@ divisible by 3 and 5 --> fizbuzz
  * Topic: if
  * !!! if we have more than 2 conditions it is recommended to use "when"*/
 
+//fun main(){
+//    var a = 10
+//    a += 5
+//
+//    val answer = if(a == 10) 10 else 15
+//    println(answer)
+//    second()
+//}
+//
+//fun second(){
+//    var a = 10
+//    a +=10
+//
+//    val answer = if(a == 10){
+//        10
+//    }else if(a == 20){
+//        20
+//    }else{
+//        15
+//    }
+//    println(answer)
+//}
+
+/**
+ * Use 'when' when you have a conditional expression with multiple branches.
+ * To use when:
+ * Place the value you want to evaluate within parentheses ().
+ * Place the branches within curly braces {}.
+ * Use -> in each branch to separate each check from the action to take if the check is successful.
+ * when can be used either as a statement or as an expression. A statement doesn't return anything but performs actions instead.*/
+
 fun main(){
     var a = 10
-    a += 5
+    a += 10
 
-    val answer = if(a == 10) 10 else 15
-    println(answer)
+    when(a){
+        10 -> println(10)
+        20 -> println(20)
+        else -> println("nothing")
+    }
     second()
 }
-
 fun second(){
     var a = 10
-    a +=10
+    a += 10
 
-    val answer = if(a == 10){
-        10
-    }else if(a == 20){
-        20
-    }else{
-        15
+    val answer = when{
+        a == 10 -> 10
+        a == 20 -> 20
+        else -> 0
     }
     println(answer)
 }
