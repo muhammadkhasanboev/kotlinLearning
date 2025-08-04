@@ -285,13 +285,40 @@ divisible by 3 and 5 --> fizbuzz
  *
  * */
 
-fun main(){
-    val immutableMap: Map<String, Int> = mapOf("one" to 1, "two" to 2) //{one=1, two=2}
-    val mutableMap: MutableMap<String, Int> = mutableMapOf("one" to 1, "two" to 2)
+//fun main(){
+//    val immutableMap: Map<String, Int> = mapOf("one" to 1, "two" to 2) //{one=1, two=2}
+//    val mutableMap: MutableMap<String, Int> = mutableMapOf("one" to 1, "two" to 2)
+//
+//    println(immutableMap["one"])
+//    mutableMap["three"] = 3//{one=1, two=2, three=3}
+//    mutableMap.remove("three")//{one=1, two=2}
+//    println(immutableMap.containsKey("one"))//true
+//}
 
-    println(immutableMap["one"])
-    mutableMap["three"] = 3//{one=1, two=2, three=3}
-    mutableMap.remove("three")//{one=1, two=2}
-    println(immutableMap.containsKey("one"))//true
+/**
+ * Conditional statements
+ * Topic: if
+ * !!! if we have more than 2 conditions it is recommended to use "when"*/
+
+fun main(){
+    var a = 10
+    a += 5
+
+    val answer = if(a == 10) 10 else 15
+    println(answer)
+    second()
 }
 
+fun second(){
+    var a = 10
+    a +=10
+
+    val answer = if(a == 10){
+        10
+    }else if(a == 20){
+        20
+    }else{
+        15
+    }
+    println(answer)
+}
