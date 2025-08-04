@@ -242,3 +242,26 @@ divisible by 3 and 5 --> fizbuzz
 //    //last item in the list removed
 //}
 //
+/**
+ * Topic: Collections -> Set
+ * Set stores item: unordered, stores only unique items
+ * types of Set:
+ *      Immutable set: val a: Set<Data type> = setOf(..)
+ *      Mutable set: val a: MutableSet<Data type> = mutableSetOf(elements)
+ * number of item in the set: a.count()
+ * checking availability: 'element name' in a
+ * add and remove: a.add(), a.remove()
+ * we cannot access elements: a[0] X
+ */
+
+fun main(){
+    val immutableSet: Set<String> = setOf("this", "is", "set")
+    val mutableSet: MutableSet<String> = mutableSetOf("this", "is", "mutable", "set")
+    println(immutableSet.count())
+    println("this" in immutableSet)
+    mutableSet.add("last element")
+    mutableSet.remove("this")
+    println("${immutableSet.first()}")
+    println("${immutableSet.last()}")
+}
+
