@@ -209,20 +209,36 @@ divisible by 3 and 5 --> fizbuzz
 //    val even = numbers.filter{x->x%2==0}
 //    println(even)//[2, 4, 6, 8]
 //}
-fun main(){
-    val immutableList : List<String> = listOf("this", "is", "immutable","list")
-    println(immutableList)
 
-    val mutableList: MutableList<String> = mutableListOf("this", "is", "mutable","list")
-    println(mutableList)
+/**
+ * Topic: Collections-> List
+ * List stores items in order that they are added
+ * we have two kind of lists: immutable and mutable
+ * despite the we declared the list with 'var' keyword
+ * we can not add or remove list items if it is immutable
+ * Immutable list: val a : List<Data type> = listOf(..)
+ * Mutable list: val a : MutableList<Data type> = mutableListOf(..)
+ * Length of the list: a.count()
+ * first and last item of the list: a.first(), a.last()
+ * add and remove functions: a.add(..), a.remove(..)
+ * accessing list items: a[0], a[1]
+ * */
 
-    println("this is first element of immutable list: ${immutableList[0]}")
-    println("these are first and last element of immutable list: ${immutableList.first()} ${immutableList.last()}")
-    println("this is length of immutable list: ${immutableList.count()}")
-    println("this" in immutableList)
-
-    mutableList.add("added word")
-    println(mutableList)
-    mutableList.removeLast()
-    //last item in the list removed
-}
+//fun main(){
+//    val immutableList : List<String> = listOf("this", "is", "immutable","list")
+//    println(immutableList)
+//
+//    val mutableList: MutableList<String> = mutableListOf("this", "is", "mutable","list")
+//    println(mutableList)
+//
+//    println("this is first element of immutable list: ${immutableList[0]}")
+//    println("these are first and last element of immutable list: ${immutableList.first()} ${immutableList.last()}")
+//    println("this is length of immutable list: ${immutableList.count()}")
+//    println("this" in immutableList)
+//
+//    mutableList.add("added word")
+//    println(mutableList)
+//    mutableList.removeLast()
+//    //last item in the list removed
+//}
+//
