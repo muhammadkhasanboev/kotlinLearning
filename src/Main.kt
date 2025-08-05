@@ -527,17 +527,32 @@ divisible by 3 and 5 --> fizbuzz
 //}
 
 // Access properties
-class simpleClass(var age: Int, val name: String)
+//class simpleClass(var age: Int, val name: String)
+//
+//fun main(){
+//    val instanceOfClass = simpleClass(2, "jane")
+//    //prints value of property
+//    println(instanceOfClass.name)
+//
+//    //updates value of property
+//    instanceOfClass.age = 4
+//
+//    //prints new value of property
+//    println(instanceOfClass.age)
+//}
 
-fun main(){
-    val instanceOfClass = simpleClass(2, "jane")
-    //prints value of property
-    println(instanceOfClass.name)
+/**
+ * Classes: Member functions
+ * -member functions should be declared within class body, inside {}
+ * -to call function, instaceOfClass.functionName()*/
 
-    //updates value of property
-    instanceOfClass.age = 4
-
-    //prints new value of property
-    println(instanceOfClass.age)
+class simpleFunction(val age: Int, val Name: String){
+    fun getAge(){
+        println(age)
+    }
 }
 
+fun main(){
+    val instanceOfFunction = simpleFunction(3, "katya")
+    instanceOfFunction.getAge()
+}
