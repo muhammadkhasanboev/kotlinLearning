@@ -517,12 +517,27 @@ divisible by 3 and 5 --> fizbuzz
 //}
 
 // creating instance of the class
-class simpleClass(val age: Int, val name: String){
-    val information : String = "name: $name, and age is: $age"
-}
+//class simpleClass(val age: Int, val name: String){
+//    val information : String = "name: $name, and age is: $age"
+//}
+//
+//fun main(){
+//    val instanceOfClass = simpleClass(7, "Jack")
+//    println(instanceOfClass.information)
+//}
+
+// Access properties
+class simpleClass(var age: Int, val name: String)
 
 fun main(){
-    val instanceOfClass = simpleClass(7, "Jack")
-    println(instanceOfClass.information)
+    val instanceOfClass = simpleClass(2, "jane")
+    //prints value of property
+    println(instanceOfClass.name)
+
+    //updates value of property
+    instanceOfClass.age = 4
+
+    //prints new value of property
+    println(instanceOfClass.age)
 }
 
