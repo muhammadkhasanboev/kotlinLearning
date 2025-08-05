@@ -493,15 +493,23 @@ divisible by 3 and 5 --> fizbuzz
 //-------------------------------------------------------------------------------
 
 // lambda expression can be returned from function
-fun second(name: String): (Int) -> Int = when(name){
-    "hour" -> { value -> value *60*60 }
-    "minute" -> { value-> value*60 }
-    "second" -> { value-> value }
-    else -> {value -> value}
-}
-fun main(){
-    val l = listOf(1,2,3)
-    val minuteToSecond = second("minute")
-    val answer = l.map(minuteToSecond).sum()
-    println(answer)
+//fun second(name: String): (Int) -> Int = when(name){
+//    "hour" -> { value -> value *60*60 }
+//    "minute" -> { value-> value*60 }
+//    "second" -> { value-> value }
+//    else -> {value -> value}
+//}
+//fun main(){
+//    val l = listOf(1,2,3)
+//    val minuteToSecond = second("minute")
+//    val answer = l.map(minuteToSecond).sum()
+//    println(answer)
+//}
+//-------------------------------------------------------------------------------
+//Kotlin: Classes
+//creating simple class, with properties
+class simpleClass(val age: Int, val name: String)
+
+class main(){
+    val objectOfSimpleClass = simpleClass(21, "Muhammad")
 }
