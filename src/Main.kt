@@ -507,9 +507,22 @@ divisible by 3 and 5 --> fizbuzz
 //}
 //-------------------------------------------------------------------------------
 //Kotlin: Classes
-//creating simple class, with properties
-class simpleClass(val age: Int, val name: String)
 
-class main(){
-    val objectOfSimpleClass = simpleClass(21, "Muhammad")
+//creating simple class, with properties
+
+//class simpleClass(val age: Int, val name: String)
+//
+//fun main(){
+//    val objectOfSimpleClass = simpleClass(21, "Muhammad")
+//}
+
+// creating instance of the class
+class simpleClass(val age: Int, val name: String){
+    val information : String = "name: $name, and age is: $age"
 }
+
+fun main(){
+    val instanceOfClass = simpleClass(7, "Jack")
+    println(instanceOfClass.information)
+}
+
