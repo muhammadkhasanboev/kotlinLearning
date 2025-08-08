@@ -546,13 +546,34 @@ divisible by 3 and 5 --> fizbuzz
  * -member functions should be declared within class body, inside {}
  * -to call function, instaceOfClass.functionName()*/
 
-class simpleFunction(val age: Int, val Name: String){
-    fun getAge(){
-        println(age)
+//class simpleFunction(val age: Int, val Name: String){
+//    fun getAge(){
+//        println(age)
+//    }
+//}
+//
+//fun main(){
+//    val instanceOfFunction = simpleFunction(3, "katya")
+//    instanceOfFunction.getAge()
+//}
+
+
+//multiple constructors
+class user{
+    var id : Int = 0
+    var name: String = " "
+
+    constructor(id: Int){
+        this.id = id
+    }
+
+    constructor(id: Int, name: String){
+        this.id = id
+        this.name = name
     }
 }
 
 fun main(){
-    val instanceOfFunction = simpleFunction(3, "katya")
-    instanceOfFunction.getAge()
+    val a = user(1)
+    val b = user(1, "jack")
 }
