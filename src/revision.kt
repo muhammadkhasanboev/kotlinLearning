@@ -10,15 +10,30 @@
 //    mutableVariable = 2
 //}
 
+//fun main(){
+//    /*Types in Kotlin:
+//    * Byte, Short, Int, Long
+//    * UByte, UShort, UInt, ULong -> unsigned integers
+//    * Float, Double
+//    * Boolean
+//    * Char
+//    * String
+//    * */
+//    val integerVariable: Int = 1
+//    println("this is '$integerVariable' integer variable")
+//}
+
 fun main(){
-    /*Types in Kotlin:
-    * Byte, Short, Int, Long
-    * UByte, UShort, UInt, ULong -> unsigned integers
-    * Float, Double
-    * Boolean
-    * Char
-    * String
-    * */
-    val integerVariable: Int = 1
-    println("this is '$integerVariable' integer variable")
+    /*Collections: List
+    * -lists can be: read-only, mutable
+    * -to create read-only list: listOf()
+    * -to create mutable list: mutableListOf()
+    * -unordered, duplicate allowed*/
+
+    val readOnlyList = listOf("a", "b", "c")
+    println(readOnlyList)
+
+    val mutableList: MutableList<String> = mutableListOf("a", "b", "c")
+    mutableList.add("d")
+    println(mutableList)
 }
