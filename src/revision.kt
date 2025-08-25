@@ -69,16 +69,28 @@
 //    println(mutableMap) //{a=1, b=2, c=3}
 //}
 
-fun main(){
-    //conditional expressions: If
-    var a: Int = 1
-    a++
-    a/=2
-    a+=2
+//fun main(){
+//    //conditional expressions: If
+//    var a: Int = 1
+//    a++
+//    a/=2
+//    a+=2
+//
+//    if(a == 2){
+//        println("2")
+//    } else {
+//        println("it was $a")
+//    }
+//}
 
-    if(a == 2){
-        println("2")
-    } else {
-        println("it was $a")
+fun main(){
+    //conditional expression: when
+    var a = 2
+    a += 2
+    a /= 2
+    when(a){
+        1 -> println("1")
+        2 -> println("2")
+        else -> println("it was $a")
     }
 }
