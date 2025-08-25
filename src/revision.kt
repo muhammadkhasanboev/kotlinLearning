@@ -83,14 +83,15 @@
 //    }
 //}
 
-fun main(){
-    //conditional expression: when
-    var a = 2
-    a += 2
-    a /= 2
-    when(a){
-        1 -> println("1")
-        2 -> println("2")
-        else -> println("it was $a")
-    }
-}
+//fun main(){
+//    //conditional expression: when
+//    var a = 2
+//    a += 2
+//    a /= 2
+//    when(a){
+//        1 -> println("1")
+//        2 -> println("2")
+//        else -> println("it was $a")
+//    }
+//}
+
