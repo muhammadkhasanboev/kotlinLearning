@@ -38,15 +38,33 @@
 //    println(mutableList)
 //}
 
-fun main(){
-    /*Collections: Set
-    * -to create read-only set: setOf()
-    * -to create mutable set: mutableSetOf()
-    * -unordered, stores unique items*/
-    val readOnlySet = setOf("a", "a", "b", "c")
-    println(readOnlySet)  //[a, b, c]
+//fun main(){
+//    /*Collections: Set
+//    * -to create read-only set: setOf()
+//    * -to create mutable set: mutableSetOf()
+//    * -unordered, stores unique items*/
+//    val readOnlySet = setOf("a", "a", "b", "c")
+//    println(readOnlySet)  //[a, b, c]
+//
+//    val mutableSet: MutableSet<String> = mutableSetOf("a", "b", "b", "c")
+//    mutableSet.remove("c")
+//    println(mutableSet) //[a, b]
+//}
 
-    val mutableSet: MutableSet<String> = mutableSetOf("a", "b", "b", "c")
-    mutableSet.remove("c")
-    println(mutableSet) //[a, b]
+fun main(){
+    /*Collections: Map
+    * -map needs value and key to store items
+    * -to create read-only map: mapOf()
+    * -to create mutable map: mutableMapOf()
+    * -maps access items by their key values
+    * -we can have duplicate values, but not duplicate keys*/
+
+    val readOnlyMap = mapOf("a" to 1, "b" to 2, "c" to 3)
+    println(readOnlyMap) //{a=1, b=2, c=3}
+    println(readOnlyMap["a"]) //1
+
+    val mutableMap: MutableMap<String, Int> = mutableMapOf("a" to 1, "b" to 2)
+    println(mutableMap) //{a=1, b=2}
+    mutableMap["c"] = 3
+    println(mutableMap) //{a=1, b=2, c=3}
 }
