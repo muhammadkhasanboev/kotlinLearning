@@ -51,20 +51,34 @@
 //    println(mutableSet) //[a, b]
 //}
 
+//fun main(){
+//    /*Collections: Map
+//    * -map needs value and key to store items
+//    * -to create read-only map: mapOf()
+//    * -to create mutable map: mutableMapOf()
+//    * -maps access items by their key values
+//    * -we can have duplicate values, but not duplicate keys*/
+//
+//    val readOnlyMap = mapOf("a" to 1, "b" to 2, "c" to 3)
+//    println(readOnlyMap) //{a=1, b=2, c=3}
+//    println(readOnlyMap["a"]) //1
+//
+//    val mutableMap: MutableMap<String, Int> = mutableMapOf("a" to 1, "b" to 2)
+//    println(mutableMap) //{a=1, b=2}
+//    mutableMap["c"] = 3
+//    println(mutableMap) //{a=1, b=2, c=3}
+//}
+
 fun main(){
-    /*Collections: Map
-    * -map needs value and key to store items
-    * -to create read-only map: mapOf()
-    * -to create mutable map: mutableMapOf()
-    * -maps access items by their key values
-    * -we can have duplicate values, but not duplicate keys*/
+    //conditional expressions: If
+    var a: Int = 1
+    a++
+    a/=2
+    a+=2
 
-    val readOnlyMap = mapOf("a" to 1, "b" to 2, "c" to 3)
-    println(readOnlyMap) //{a=1, b=2, c=3}
-    println(readOnlyMap["a"]) //1
-
-    val mutableMap: MutableMap<String, Int> = mutableMapOf("a" to 1, "b" to 2)
-    println(mutableMap) //{a=1, b=2}
-    mutableMap["c"] = 3
-    println(mutableMap) //{a=1, b=2, c=3}
+    if(a == 2){
+        println("2")
+    } else {
+        println("it was $a")
+    }
 }
