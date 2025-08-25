@@ -23,17 +23,30 @@
 //    println("this is '$integerVariable' integer variable")
 //}
 
+//fun main(){
+//    /*Collections: List
+//    * -lists can be: read-only, mutable
+//    * -to create read-only list: listOf()
+//    * -to create mutable list: mutableListOf()
+//    * -ordered, duplicate allowed*/
+//
+//    val readOnlyList = listOf("a", "b", "c")
+//    println(readOnlyList)
+//
+//    val mutableList: MutableList<String> = mutableListOf("a", "b", "c")
+//    mutableList.add("d")
+//    println(mutableList)
+//}
+
 fun main(){
-    /*Collections: List
-    * -lists can be: read-only, mutable
-    * -to create read-only list: listOf()
-    * -to create mutable list: mutableListOf()
-    * -unordered, duplicate allowed*/
+    /*Collections: Set
+    * -to create read-only set: setOf()
+    * -to create mutable set: mutableSetOf()
+    * -unordered, stores unique items*/
+    val readOnlySet = setOf("a", "a", "b", "c")
+    println(readOnlySet)  //[a, b, c]
 
-    val readOnlyList = listOf("a", "b", "c")
-    println(readOnlyList)
-
-    val mutableList: MutableList<String> = mutableListOf("a", "b", "c")
-    mutableList.add("d")
-    println(mutableList)
+    val mutableSet: MutableSet<String> = mutableSetOf("a", "b", "b", "c")
+    mutableSet.remove("c")
+    println(mutableSet) //[a, b]
 }
