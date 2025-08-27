@@ -125,11 +125,25 @@
 //    user1.PrintAllInfo()
 //}
 
-data class User(val name: String, val id: Int)
+//data class User(val name: String, val id: Int)
+//
+//fun main(){
+//    val user = User("Alex", 777)
+//    println(user) // User(name=Alex, id=777)
+//    val user2 = user.copy()
+//    println(user2)
+//}
 
 fun main(){
-    val user = User("Alex", 777)
-    println(user) // User(name=Alex, id=777)
-    val user2 = user.copy()
-    println(user2)
+    var neverNull: String = "this cant be null"
+    //neverNull = null is impossible
+    var nullPossible: String? = "You can keep null value"
+    nullPossible = null
+
+    //by default variables can not be nullable
+    var defaultVariable = "You can not assing null value"
+    //defaultVariable = null -> impossible
+    println(neverNull.length)
+    //println(nullPossible.length) ->throws compiler error
+
 }
