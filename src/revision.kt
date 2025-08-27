@@ -134,16 +134,69 @@
 //    println(user2)
 //}
 
-fun main(){
-    var neverNull: String = "this cant be null"
-    //neverNull = null is impossible
-    var nullPossible: String? = "You can keep null value"
-    nullPossible = null
+//fun main(){
+//    var neverNull: String = "this cant be null"
+//    //neverNull = null is impossible
+//    var nullPossible: String? = "You can keep null value"
+//    nullPossible = null
+//
+//    //by default variables can not be nullable
+//    var defaultVariable = "You can not assing null value"
+//    //defaultVariable = null -> impossible
+//    println(neverNull.length)
+//    //println(nullPossible.length) ->throws compiler error
+//
+//}
 
-    //by default variables can not be nullable
-    var defaultVariable = "You can not assing null value"
-    //defaultVariable = null -> impossible
-    println(neverNull.length)
-    //println(nullPossible.length) ->throws compiler error
+
+fun userInputCheck(login: String?, password: String?): String{
+    if(login!=null && login.length>0){
+        if(password!=null && password.length>=8){
+            return "Welcome"
+        }else{
+        return "Password should contain at least 8 characters"
+        }
+    }else{
+        return "login is invalid"
+    }
 
 }
+fun main(){
+    val login_1: String? = null
+    val login_2: String? = "Alex"
+    val login_3: String? = "example"
+
+    val password_1: String? = "12345678"
+    val password_2: String? = "1111111"
+    val password_3: String? = "example123"
+
+    println(userInputCheck(login_1, password_1))
+    println(userInputCheck(login_2, password_2))
+    println(userInputCheck(login_3, password_3))
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
