@@ -114,13 +114,20 @@
 //    println(adder(a,b)) //3
 //}
 
-class Example(val name: String, val age: Int){
-    fun PrintAllInfo(){
-        println("User name: $name, \nUser age: $age")
-    }
-}
+//class Example(val name: String, val age: Int){
+//    fun PrintAllInfo(){
+//        println("User name: $name, \nUser age: $age")
+//    }
+//}
+//
+//fun main(){
+//    val user1 = Example("John", 21)
+//    user1.PrintAllInfo()
+//}
+
+data class User(val name: String, val id: Int)
 
 fun main(){
-    val user1 = Example("John", 21)
-    user1.PrintAllInfo()
+    val user = User("Alex", 777)
+    println(user) // User(name=Alex, id=777)
 }
