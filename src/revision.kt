@@ -130,4 +130,6 @@ data class User(val name: String, val id: Int)
 fun main(){
     val user = User("Alex", 777)
     println(user) // User(name=Alex, id=777)
+    val user2 = user.copy()
+    println(user2)
 }
