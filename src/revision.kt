@@ -107,9 +107,20 @@
 //    return a+b
 //}
 
+//fun main(){
+//    val a = 1
+//    val b = 2
+//    val adder: (Int, Int) -> Int = {a,b -> a+b}
+//    println(adder(a,b)) //3
+//}
+
+class Example(val name: String, val age: Int){
+    fun PrintAllInfo(){
+        println("User name: $name, \nUser age: $age")
+    }
+}
+
 fun main(){
-    val a = 1
-    val b = 2
-    val adder: (Int, Int) -> Int = {a,b -> a+b}
-    println(adder(a,b)) //3
+    val user1 = Example("John", 21)
+    user1.PrintAllInfo()
 }
