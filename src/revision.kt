@@ -175,12 +175,28 @@
 //    println(userInputCheck(login_3, password_3))
 //}
 
-fun main(){
-    print("enter the value: ")
-    val a = readln()
-    println(a)
+//fun main(){
+//    print("enter the value: ")
+//    val a = readln()
+//    println(a)
+//}
+
+open class A(val name: String){
+    open fun info(): String{
+        return "name is: $name"
+    }
 }
 
+class B(val id: Int, name: String): A(name){
+    override fun info(): String{
+        return "username: $name\nuser Id: $id"
+    }
+}
+
+fun main(){
+    val example = B(3, "Whoever")
+    println(example.info())
+}
 
 
 
